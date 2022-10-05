@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>DR TURKI SULTAN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="icon" href="../logo/logo.png">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <!-- loading tv -->
+    <div class="all">
+      <div class="scene">
+          <div class="wrap">
+              <div class="wall wall-right"></div>
+              <div class="wall wall-left"></div>
+              <div class="wall wall-top"></div>
+              <div class="wall wall-bottom"></div>
+              <div class="wall wall-back"></div>
+          </div>
+          <div class="wrap">
+              <div class="wall wall-right"></div>
+              <div class="wall wall-left"></div>
+              <div class="wall wall-top"></div>
+              <div class="wall wall-bottom"></div>
+              <div class="wall wall-back"></div>
+          </div>
+      </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script  src="./script.js"></script>
+  <script src="../script/jquery-3.6.1.js"></script>
+  <script>
+
+
+      $(window).on("load", function () {
+
+          $(".all .scene").fadeOut(9000, function () {
+              $(this).parent().fadeOut(1000);
+              $("body").css("overflow", "auto");
+          });
+
+      });
+
+
+  </script>
+
+
+</body>
+</html>

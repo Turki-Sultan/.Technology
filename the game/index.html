@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../logo/logo.png">
+  <title>DR TURKI SULTAN</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container Game-start">
+  <div class="nft">
+    <img class="nft-gif" src="https://maroine619.github.io/memoryGameNft/Img/giphy.gif" alt="Nft">
+  </div>
+  <button class="btn-s">Start Game</button>
+  <select class="level-opt">
+    <option value="easy">
+      easy
+    </option>
+    <option value="medium">
+      medium
+    </option>
+    <option value="hard">
+      hard
+    </option>
+    <option value="don't try">
+      don't try
+    </option>
+  </select>
+</div>
+
+
+    <!-- loading tv -->
+    <div class="all">
+      <div class="scene">
+          <div class="wrap">
+              <div class="wall wall-right"></div>
+              <div class="wall wall-left"></div>
+              <div class="wall wall-top"></div>
+              <div class="wall wall-bottom"></div>
+              <div class="wall wall-back"></div>
+          </div>
+          <div class="wrap">
+              <div class="wall wall-right"></div>
+              <div class="wall wall-left"></div>
+              <div class="wall wall-top"></div>
+              <div class="wall wall-bottom"></div>
+              <div class="wall wall-back"></div>
+          </div>
+      </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./script/bootstrap.bundle.min.js"></script>
+  <script src="./script/script.js"></script>
+  <script src="../script/jquery-3.6.1.js"></script>
+  <script>
+
+
+      $(window).on("load", function () {
+
+          $(".all .scene").fadeOut(9000, function () {
+              $(this).parent().fadeOut(1000);
+              $("body").css("overflow", "auto");
+          });
+
+      });
+
+
+  </script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
