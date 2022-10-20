@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./logo/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>DR TURKI SULTAN</title>
+</head>
+
+<body>
+
+
+
+
+
+
+        <header class="header container">
+        <div class="container">
+          <div class="row-wrap">
+            <div class="logo-wrap">
+    
+            
+              <span class="logo">Turki Technology</span>
+            </div>
+            <div class="nav-wrap">
+              <ul class="nav-list" dir="ltr">
+                <li><a href="./BUB/index.html">Bubbles</a></li>
+                <li><a href="./tecnolgy/index.html">Technology</a></li>
+                <li><a href="./ring/index.html">Rain</a></li>
+                <li><a href="./draw/index.html">Engraving</a></li>
+                <li><a href="./the game/index.html">Game NFT</a></li>
+                <li><a href="./menu/index.html">Restaurant</a></li>
+                <li><a href="./cafe/index.html">Cafe</a></li>
+                <li><a href="./journey/index.html">journey</a></li>
+                <li><a href="./about us/index.html">Contact</a></li>
+    
+                <!-- here form -->
+              
+              </ul>
+    
+            </div>
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    
+    
+    
+    
+    
+    <section class="sec">
+      <!--   <header>
+            <h2 class="logo-name">Turki Sultan</h2>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="./BUB/index.html">Bubbles</a></li>
+                <li><a href="./tecnolgy/index.html">Technology</a></li>
+                <li><a href="./ring/index.html">Rain</a></li>
+                <li><a href="./draw/index.html">Engraving</a></li>
+                <li><a href="./the game/index.html">Game NFT</a></li>
+                <li><a href="./menu/index.html">Restaurant</a></li>
+                <li><a href="./cafe/index.html">Cafe</a></li>
+                <li><a href="./journey/index.html">journey</a></li>
+                <li><a href="./about us/index.html">Contact</a></li>
+            </ul>
+        </header> -->
+        <div class="content">
+            <div class="textBox">
+                <h2>explore new<br><span >world</span></h2>
+                <div class="father2">
+                    <div class="wrapper">
+                        <h1 class="text--static">Hello</h1>
+                        <br>
+                        <h1 class="text--dynamic"></h1>
+                      </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="imgBox">
+                <img src="/logo/logo.png" alt="" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./logo/logo BLUE.png" onclick="imgSlider('./logo/logo BLUE.png'); changeBgColor('#0062be')"
+                    alt="Pepsi Soda"></li>
+            <li><img src="./logo/logo RED.png" onclick="imgSlider('./logo/logo RED.png'); changeBgColor('#e60c2c')"
+                    alt="Pepsi Cola"></li>
+            <li><img src="./logo/logo.png" onclick="imgSlider('./logo/logo.png'); changeBgColor('#1e1e1e')"
+                    alt="Pepsi Zero"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/profile.php?id=100085567646721"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="http://Wa.me/+01207966887"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/turki-sultan/" class="bi bi-linkedin" aria-hidden="true"></a></li>
+           
+        </ul>
+    </section>
+
+
+
+    <footer></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- loading tv -->
+    <div class="all">
+        <div class="scene">
+            <div class="wrap">
+                <div class="wall wall-right"></div>
+                <div class="wall wall-left"></div>
+                <div class="wall wall-top"></div>
+                <div class="wall wall-bottom"></div>
+                <div class="wall wall-back"></div>
+            </div>
+            <div class="wrap">
+                <div class="wall wall-right"></div>
+                <div class="wall wall-left"></div>
+                <div class="wall wall-top"></div>
+                <div class="wall wall-bottom"></div>
+                <div class="wall wall-back"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/jquery-3.6.1.js"></script>
+    <script>
+
+
+        $(window).on("load", function () {
+
+            $(".all .scene").fadeOut(9000, function () {
+                $(this).parent().fadeOut(1000);
+                $("body").css("overflow", "auto");
+            });
+
+        });
+
+
+        function header_adj() {
+	if ($(window).width() <= 992) {
+		var header_height = $(".header").outerHeight();
+		$(".nav-wrap .nav-list").css({ "padding-top": header_height + "px" });
+	} else {
+		$(".nav-wrap .nav-list").css({ "padding-top": "0" });
+	}
+}
+function submenu_toggle() {
+	if ($(window).width() <= 992) {
+		$(".nav-list li.with-submenu")
+			.off()
+			.click(function () {
+				$(this).toggleClass("is-open");
+				$(".submenu").slideToggle("slow");
+			});
+	}
+}
+$(document).ready(function () {
+	header_adj();
+	submenu_toggle();
+	if ($(window).width() <= 992) {
+		$(".hamburger").click(function () {
+			$(this).toggleClass("is-active");
+			$("body,html,*").toggleClass("sidebar-open");
+			$(".nav-wrap").toggleClass("is-open");
+		});
+
+		$(".overlay").click(function () {
+			$(".hamburger").removeClass("is-active");
+			$("body,html,*").removeClass("sidebar-open");
+			$(".nav-wrap").removeClass("is-open");
+		});
+	} else {
+		$(".hamburger").removeClass("is-active");
+		$("body,html,*").removeClass("sidebar-open");
+		$(".nav-wrap").removeClass("is-open");
+	}
+});
+$(window).on("resize", function () {
+	header_adj();
+	submenu_toggle();
+	if ($(window).width() <= 992) {
+		$(".hamburger").click(function () {
+			$(this).toggleClass("is-active");
+			$("body,html,*").toggleClass("sidebar-open");
+			$(".nav-wrap").toggleClass("is-open");
+		});
+
+		$(".overlay").click(function () {
+			$(".hamburger").removeClass("is-active");
+			$("body,html,*").removeClass("sidebar-open");
+			$(".nav-wrap").removeClass("is-open");
+		});
+	} else {
+		$(".hamburger").removeClass("is-active");
+		$("body,html,*").removeClass("sidebar-open");
+		$(".nav-wrap").removeClass("is-open");
+	}
+});
+
+
+    </script>
+</body>
+
+</html>
